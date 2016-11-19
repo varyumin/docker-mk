@@ -13,7 +13,7 @@ def git_repo = env.GIT_REPO_URL
     //Packaging the image into a Docker image
     def pkg = docker.build ("${env.DOCKERHUB_USER}/blog_ui", 'app/blog_ui')
 
-  //Допишем stage с тестами после этого комментария
+  //Допишем stage с тестами после этого комментария1
 
   stage 'Push Image to DockerHub'
     //Pushing the packaged app in image into DockerHub
